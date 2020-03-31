@@ -2,7 +2,7 @@
 
 __Deploy a SFTP server running as a container in an Azure Container Instance with Azure File Shares as the persistent storage__
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/saikovvuri/SftpOnAzure/master/azuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsaikovvuri%2FSftpOnAzure%2Fmaster%2Fazuredeploy.json)
 
 >Note: This is a temporary proof of concept
 
