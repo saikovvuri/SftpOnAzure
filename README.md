@@ -6,24 +6,24 @@ __Deploy a SFTP server running as a container in an Azure Container Instance wit
 
 >Note: This is a temporary proof of concept
 
-# Deployment Steps via Az CLI
+## Deployment Steps via Az CLI
 
 ```
 az group create --name <resourcegroup> --location <location>
 az group deployment create --resource-group <resourcegroup> --template-file <template.json>
 ```
 
-# Deployment results
+## Deployment results
 
 - Template creates two users, with name and password provided as parameters
 - Individual file shares will be created per user, which are bind mounted to container instance
 
-# Testing 
+## Testing 
 - use a SFTP client like WinSCP
 - use Container Instance's public IP as hostname
 - use username/password for the 2 users to login and view/upload artifacts
 - validate on azure file shares
 
-# Future roadmap
+## Future roadmap
 - Supply list of users in config file and map to /etc/sftp/users.conf
 - Users should use more secure way to login in like SSH keys. Mount public keys in the user's .ssh/keys directory
